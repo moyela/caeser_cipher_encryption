@@ -1,6 +1,6 @@
 # Caeser Cipher Encryptor
 
-This program was developed to introduce basic software encryption concepts to students
+This program was developed to introduce basic software encryption concepts to children or students
 learning basic comupter science. It runs on Ruby version 3.2.2 on Rails 7.1.2
 
 To run this program locally, download the code with a local sample and install Ruby and Rails. 
