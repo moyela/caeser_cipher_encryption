@@ -1,24 +1,15 @@
-# README
+# Caeser Cipher Encryptor
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This program was developed to introduce basic software encryption concepts to students
+learning basic comupter science. It runs on Ruby version 3.2.2 on Rails 7.1.2
 
-Things you may want to cover:
+To run this program locally, download the code with a local sample and install Ruby and Rails. 
+You can find installation instructions at [the offical site](https://guides.rubyonrails.org/getting_started.html)
 
-* Ruby version
+Once you have Rails installed, open your terminal and navigate to the root directory of this program.
 
-* System dependencies
+To start the program's server, run:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```sh
+$ bin/rails server
+```
