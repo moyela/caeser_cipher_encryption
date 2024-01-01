@@ -1,4 +1,4 @@
-require_relative 'cypher_methods'
+require_relative 'cipher_methods'
 
 $cracker = CaeserCypherKit.new()
 

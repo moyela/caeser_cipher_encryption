@@ -1,5 +1,5 @@
-require_relative "cypher_methods"
-require 'test/unit'
+require_relative "cipher_methods"
+
 =begin 
     This script is intended to create a Caeser Cypher decryptor that unshifts each individual letter in text inputted to it along the number
     positions of the english alphabet letters. 
