@@ -31,3 +31,5 @@ get '/decrypt' do
   decrypted_text = caeser_cypher_decrypt(input_string, input_key)
   { result: decrypted_text }.to_json
 end
+
+configure { set :server, :puma }
