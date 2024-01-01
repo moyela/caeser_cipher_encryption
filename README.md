@@ -3,7 +3,7 @@
 This program was developed to introduce basic software encryption concepts to children or students
 learning basic comupter science. It accepts an input string and an encryption key and shifts each character along the index positions of the 26 English alphabet letters and returns an output string that has been character-shifted in accordance with the key. 
 
-For example, an encryption with key:3 changes "Ant." to "Dqw."
+For example, an encryption with input string: "Ant" and encryption key: 3 returns "Dqw."
 
 This algorithm was named after Roman general Julius Caeser who reportedly used an implementation of it to secure classified correspondence.
 
