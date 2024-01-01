@@ -5,16 +5,12 @@ learning basic comupter science. It accepts an input string and an encryption ke
 
 For example, an encryption with input string: "Ant" and encryption key: 3 returns "Dqw."
 
-This algorithm was named after Roman general Julius Caeser who reportedly used an implementation of it to secure classified correspondence.
-
-It runs on Ruby 3.2.2 and Sinatra, with a Puma server.
+This algorithm was named after Roman general Julius Caeser who reportedly used an implementation of it to secure classified correspondence. It runs on Ruby 3.2.2 and Sinatra with a Puma server.
 
 ## How to run locally
 
 To run this program locally, download the code with a local sample and install Ruby sinatra. 
-You can find installation instructions at [the offical site](https://www.ruby-lang.org/en/)
-
-Once you have Ruby installed, open your terminal and navigate to the 'local' directory.
+You can find installation instructions at [the offical site](https://www.ruby-lang.org/en/). Once you have Ruby installed, open your terminal and navigate to the 'local' directory.
 
 Run the encryption program with:
 ```sh
@@ -40,7 +36,7 @@ Build command:
 $ bundle install
 ```
 
-Start command
+Start command:
 ```sh
 $ bundle exec ruby start.rb
 ```
@@ -48,13 +44,13 @@ $ bundle exec ruby start.rb
 
 After deploying the service, access the endpoints at:
 <dl>
-  <dt>Encryption</dt>
+  <dt>Encryption:</dt>
   <dd>{YOUR_URL}/encrypt</dd>
-  <dt>Decryption</dt>
+  <dt>Decryption:</dt>
   <dd>{YOUR_URL}/decrypt</dd>
 </dl>
 
-To encrypt an input you would make a GET request to *https://www.yoururl.com/encrypt* with your JSON body containing:
+To encrypt an input you would make a GET request to *https://www.yoururl.com/encrypt* with your JSON body containing your input and encryption key:
 
 ```json
 {
