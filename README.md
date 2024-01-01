@@ -14,17 +14,17 @@ You can find installation instructions at [the offical site](https://www.ruby-la
 
 Run the encryption program with:
 ```sh
-$ ruby caeser_cipher_encryptor.rb
+$ ruby encryptor.rb
 ```
 
 Run the decryption program with:
 ```sh
-$ ruby caeser_cipher_decryptor.rb
+$ ruby decryptor.rb
 ```
 
 Run the encryption cracker program with:
 ```sh
-$ ruby caeser_cipher_cracker.rb
+$ ruby cracker.rb
 ```
 
 ## How to deploy as a microservice
