@@ -10,6 +10,7 @@ This algorithm was named after Roman general Julius Caeser who reportedly used a
 It runs on Ruby 3.2.2 and Sinatra, with a Puma server.
 
 ## How to run locally
+
 To run this program locally, download the code with a local sample and install Ruby sinatra. 
 You can find installation instructions at [the offical site](https://www.ruby-lang.org/en/)
 
@@ -31,6 +32,7 @@ $ ruby caeser_cipher_cracker.rb
 ```
 
 ## How to deploy as a microservice
+
 Create a fork of this repository and add it as a source in your hosting provider.
 
 Build command: 
@@ -43,6 +45,7 @@ Start command
 $ bundle exec ruby start.rb
 ```
 #### Service endpoints
+
 After deploying the service, access the endpoints at:
 <dl>
   <dt>Encryption</dt>
@@ -51,3 +54,19 @@ After deploying the service, access the endpoints at:
   <dd>{YOUR_URL}/decrypt</dd>
 </dl>
 
+To encrypt an input you would make a GET request to *https://www.yoururl.com/encrypt* with your JSON body containing:
+
+```json
+{
+    "text": "Ug vium qa Igzi Abizz ivl Q'u vwb i bmzzwzqab",
+    "key": 8
+}
+```
+
+And the response body would contain:
+
+```json
+{
+    "result": "My name is Ayra Starr and I'm not a terrorist"
+}
+```
