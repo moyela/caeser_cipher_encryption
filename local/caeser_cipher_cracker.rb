@@ -1,4 +1,5 @@
-require_relative 'cipher_methods'
+# load the entire encryption kit from cipher_methods in the lib directory
+require_relative "../lib/cipher_methods"
 
 $cracker = CaeserCypherKit.new()
 

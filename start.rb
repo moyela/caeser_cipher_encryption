@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'json'
-require_relative 'encryptor'
-require_relative 'decryptor'
+require_relative 'server/encrypt'
+require_relative 'server/decrypt'
 
 get '/' do
   'Server active!'

@@ -1,4 +1,6 @@
-require_relative "cipher_methods"
+# load the entire encryption kit from cipher_methods in the lib directory
+require_relative "../lib/cipher_methods"
+
 =begin 
     This script is intended to create a Caeser Cypher that shifts each individual letter in text inputted to it along the number
     positions of the english alphabet letters. 
