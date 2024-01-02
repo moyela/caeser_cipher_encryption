@@ -3,6 +3,10 @@ require 'json'
 require_relative 'server/encrypt'
 require_relative 'server/decrypt'
 
+before do
+  response.headers['Access-Control-Allow-Origin'] = '*'
+end
+
 get '/' do
   'Server active!'
 end
