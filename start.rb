@@ -5,13 +5,19 @@ require_relative 'server/decrypt'
 
 before do
   response.headers['Access-Control-Allow-Origin'] = '*'
+  response.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE'
+  response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
 end
 
 get '/' do
+  status 200
   'Server active!'
 end
 
 post '/encrypt' do
+
+  status 200
+
   content_type :json
 
   request_payload = JSON.parse(request.body.read)
@@ -25,6 +31,9 @@ post '/encrypt' do
 end
 
 post '/decrypt' do
+
+  status 200
+  
   content_type :json
 
   request_payload = JSON.parse(request.body.read)
