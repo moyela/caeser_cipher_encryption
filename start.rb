@@ -7,10 +7,10 @@ before do
   response.headers['Access-Control-Allow-Origin'] = '*'
   response.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE'
   response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
+  status 200
 end
 
 get '/' do
-  status 200
   'Server active!'
 end
 
@@ -33,7 +33,7 @@ end
 post '/decrypt' do
 
   status 200
-  
+
   content_type :json
 
   request_payload = JSON.parse(request.body.read)
