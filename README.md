@@ -51,7 +51,7 @@ Once the service is live, access the endpoints at:
   <dd>{YOUR_URL}/decrypt</dd>
 </dl>
 
-To encrypt an input you would make a GET request to *https://www.yoururl.com/encrypt* with your JSON body containing your input and encryption key:
+To encrypt an input you would make a POST request to *https://www.yoururl.com/encrypt* with your JSON body containing your input and encryption key:
 
 ```json
 {

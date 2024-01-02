@@ -7,7 +7,7 @@ get '/' do
   'Server active!'
 end
 
-get '/encrypt' do
+post '/encrypt' do
   content_type :json
 
   request_payload = JSON.parse(request.body.read)
@@ -20,7 +20,7 @@ get '/encrypt' do
   { output:encrypted_text }.to_json
 end
 
-get '/decrypt' do
+post '/decrypt' do
   content_type :json
 
   request_payload = JSON.parse(request.body.read)
