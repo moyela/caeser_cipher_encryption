@@ -9,8 +9,9 @@ This algorithm was named after Roman general Julius Caeser who reportedly used a
 
 ## How to run locally
 
-To run this program locally, download the code with a local sample and install Ruby sinatra. 
-You can find installation instructions at [the offical site](https://www.ruby-lang.org/en/). Once you have Ruby installed, open your terminal and navigate to the 'local' directory.
+To run this program locally, download this repo and install Ruby. You can find installation instructions at [the offical site](https://www.ruby-lang.org/en/). 
+
+Once you have Ruby installed, open your terminal and navigate to the 'local' directory.
 
 Run the encryption program with:
 ```sh
@@ -29,7 +30,7 @@ $ ruby cracker.rb
 
 ## How to deploy as a microservice
 
-Create a fork of this repository and add it as a source in your hosting provider.
+You can create a fork of this repository and add it as a source in your hosting provider or run a local server by downloading this repo. Install Ruby and run the following commands from the root of of the repo in your terminal. Use these same commands to deploy to a PAAS service like Render.
 
 Build command: 
 ```sh
@@ -42,7 +43,7 @@ $ bundle exec ruby start.rb
 ```
 #### Service endpoints
 
-After deploying the service, access the endpoints at:
+Once the service is live, access the endpoints at:
 <dl>
   <dt>Encryption:</dt>
   <dd>{YOUR_URL}/encrypt</dd>
@@ -54,7 +55,7 @@ To encrypt an input you would make a GET request to *https://www.yoururl.com/enc
 
 ```json
 {
-    "text": "Ug vium qa Igzi Abizz ivl Q'u vwb i bmzzwzqab",
+    "input": "Ug vium qa Igzi Abizz ivl Q'u vwb i bmzzwzqab",
     "key": 8
 }
 ```
@@ -63,6 +64,8 @@ And the response body would contain:
 
 ```json
 {
-    "result": "My name is Ayra Starr and I'm not a terrorist"
+    "output": "My name is Ayra Starr and I'm not a terrorist"
 }
 ```
+
+The request structure is the same to decrypt an input.
