@@ -5,7 +5,7 @@ learning basic comupter science. It accepts an input string and an encryption ke
 
 For example, an encryption with input string: "Ant" and encryption key: 3 returns "Dqw."
 
-This algorithm was named after Roman general Julius Caeser who reportedly used an implementation of it to secure classified correspondence. It runs on Ruby 3.2.2 and Sinatra with a Puma server.
+This algorithm was named after Roman general Julius Caeser and emperor Augustus Caeser who both [used](https://www.britannica.com/topic/cryptology/History-of-cryptology#:~:text=The%20Romans%20used%20monoalphabetic%20substitution%20with%20a%20simple%20cyclic%20displacement%20of%20the%20alphabet.%20Julius%20Caesar%20employed%20a%20shift%20of%20three%20positions%20so%20that%20plaintext%20A%20was%20encrypted%20as%20D%2C%20while%20Augustus%20Caesar%20used%20a%20shift%20of%20one%20position%20so%20that%20plaintext%20A%20was%20enciphered%20as%20B.) implementations of it to secure classified correspondence. It runs on Ruby 3.2.2 and Sinatra with a Puma server.
 
 ## How to run locally
 
